@@ -1,0 +1,15 @@
+FROM node:20.0.0-alpine
+
+RUN mkdir -p /home/node/
+
+WORKDIR /home/node
+
+COPY src/* .
+
+RUN npm install
+
+COPY src/ .
+
+EXPOSE 8000
+
+CMD [ "npm", "start"]
