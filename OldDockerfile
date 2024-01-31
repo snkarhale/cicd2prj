@@ -1,0 +1,4 @@
+docker image build -t myimage:v1 .
+docker image tag myimage:v1 <docker a/c>/myimage:v1
+docker image push <docker a/c>/myimage:v1
+
